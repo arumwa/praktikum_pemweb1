@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Form 3.2</title>
+</head>
+<body>
+    <nav class="navi">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Generate Link</a></li>
+        <li><a href="#">Transaction History</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Logout</a></li>
+        </ul>
+        </nav>
+        </body>
+        <style type="text/css">
+            a{text-decoration: none; font-size: 20px;font-family: sans-serif;padding: 14px 10px}
+            ul{padding: 14px}
+            li{list-style: none; display: inline;}
+            li a{background: #222; color:#d4d4d4;}
+            li a:hover{background: #4da4ff; color:#fff;}
+            .navi{background: #222; height: 50px}
+            </style>
+
+<table>
+    <tr>
+        <td>
+            <form action="" methode="post">
+                <table>
+                    <tr>
+                        <td rowspan="13"><img src="img/parka.png" style= "display: block; margin-left: 0px; margin-right: auto; margin-top: 10px; width: 60%"></td>
+                    </tr>
+                    <tr>
+                        <td>Title Here:</td>
+                        <td><input type="text" id="Ttitle Here" name="productname"></td>
+                    </tr>
+                    <tr>
+                        <td>Description:</td>
+                        <td><textarea name="instructions" id="desc" cols="30" rows="10" placeholder="no more than 400 characters long" maxlength="400"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Account Number:</td>
+                        <td><input type="text" id="Account Number" name="productname"></td>
+                    </tr>
+                    <tr>
+                        <td>Bank:</td>
+                        <td><input type="text" list="bank" name="bankname"><datalist id="bank">
+                            <option value="HSBC"></option>
+                        </datalist></td>
+                    </tr>
+                    <tr>
+                        <td>Account Holder:</td>
+                        <td><input type="text" id="Account Holder" name="holdername"></td>
+                    </tr>
+                    <tr>
+                        <td>Transaction:</td>
+                        <td><input type="number" id="number" name="number"></td>    
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>*if the transaction is for 3 person, choose 3 from the drop-down list</td>
+                    </tr>
+                    <tr style="color: chartreuse;">
+                        <td></td>
+                        <td><input type="checkbox" name="phone" value="Send to Mobile Phone" checked>
+                            <label for="phone">Send to Mobile Phone</label><br></td>
+                    </tr>
+                    <tr style="color: chartreuse;">
+                        <td></td>
+                        <td><input type="checkbox" name="email" value="Send to Email" checked>
+                            <label for="phone">Send to Email</label><br></td>
+                    </tr>
+                    <tr>
+                        <td>Send to Mobile Phone:</td>
+                        <td><input type="text" id="mobilephone" name="nomor"></td>
+                    </tr>
+                    <tr>
+                        <td>Send to Email:</td>
+                        <td><input type="text" id="toemail" name="emailaddress"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="reset">Generate New Link</button></td>
+                    </tr>
+                </table>
+        </td>
+    </tr>
+</table>
+<br>
+    <form action="/action_page.php">
+        <label for="myfile">Select files:</label>
+        <input type="file" id="myfile" name="myfile" multiple><br>
+      </form>
+</body>
+</html>
